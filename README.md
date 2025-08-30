@@ -1,87 +1,107 @@
-# Welcome to React Router!
+# RESUMIND - AI-Powered Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Overview
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+RESUMIND is an innovative AI-powered resume analysis tool designed to help job seekers optimize their resumes for better success in their job applications. This project was developed as part of a college project to demonstrate the practical application of modern web technologies and artificial intelligence in solving real-world problems.
+
+![RESUMIND Screenshot](public/images/app-screenshot.png)
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- 🤖 **AI-Powered Analysis**: Advanced resume analysis using artificial intelligence
+- 📊 **Comprehensive Scoring**: Detailed scoring across multiple categories:
+  - ATS (Applicant Tracking System) Compatibility
+  - Tone and Style
+  - Content Quality
+  - Structure
+  - Skills Assessment
+- 📱 **Responsive Design**: Full mobile and desktop compatibility
+- 🔐 **Secure Authentication**: User authentication and data protection
+- � **PDF Support**: Native PDF file handling and conversion
+- 💾 **Cloud Storage**: Secure storage of resumes and analysis results
+
+## Technology Stack
+
+- **Frontend**: React with TypeScript
+- **Routing**: React Router v7
+- **Styling**: TailwindCSS with custom animations
+- **PDF Processing**: PDF.js
+- **Authentication**: Puter Auth
+- **Storage**: Puter File System & KV Store
+- **AI Integration**: Puter AI Services
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 18.0 or higher
+- npm or yarn package manager
+
 ### Installation
 
-Install the dependencies:
+1. Clone the repository:
+```bash
+git clone https://github.com/HTGA75/ai-resume-analyzer.git
+cd ai-resume-analyzer
+```
 
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
-
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The application will be available in your default web browser once started.
 
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## Project Structure
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+resumind/
+├── app/                    # Main application code
+│   ├── components/         # Reusable UI components
+│   ├── lib/               # Utility functions and services
+│   ├── routes/            # Application routes
+│   └── styles/            # CSS and styling files
+├── public/                # Static assets
+├── types/                 # TypeScript type definitions
+└── constants/             # Application constants
 ```
 
-## Styling
+## Key Components
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- **Resume Analysis**: Provides detailed feedback on resume content and structure
+- **ATS Compatibility**: Checks how well your resume works with ATS systems
+- **Score Visualization**: Interactive gauges and badges for score representation
+- **PDF Processing**: Converts and displays PDF resumes with high fidelity
 
----
+## Future Enhancements
 
-Built with ❤️ using React Router.
+- [ ] Enhanced AI analysis capabilities
+- [ ] Resume template suggestions
+- [ ] Job market insights integration
+- [ ] Multi-language support
+- [ ] Expanded scoring metrics
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- React Router team for the routing framework
+- TailwindCSS team for the styling system
+- Puter.com for authentication and AI services
+- PDF.js contributors for PDF handling capabilities
+
+## Author
+
+Harshit Gupta
+- GitHub: [@HTGA75]
